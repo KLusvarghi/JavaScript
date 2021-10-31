@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+    <style>
+        h1{
+            background: rgb(98, 24, 151);
+            color: blueviolet;
+            margin-top: 70px;
+            margin-left: 40px;
+        }
+        body{
+            background-color: darkcyan;
+            color:rgb(11, 6, 112) ;
+            font: 20pt arial 
+        }
+        input{
+            font: normal 13pt arial;
+            width: 100px;
+        }
+        div#resposta{
+            margin-left: 120px;
+            color: black;
+            font: 15pt arial
+        }
+        input#but{
+            background-color: chocolate;
+        }
+        input#ida{
+            color: rgb(255, 0, 191);
+
+        }
+
+    </style>
+</head>
+    <h1>Sistema de Votação</h1>
+    Digite qual sua idade: <input type="number" name="" id="ida">
+    <input type="button" value="Verificar" onclick="idadeX()" id="but">
+    <div id="resposta">
+
+    </div>
+<body>
+    <script>
+        function idadeX(){
+            var idadePessoa = window.document.querySelector('input#ida')
+            var resposta = window.document.querySelector('div#resposta')
+            var valor = (idadePessoa.value)
+            resposta.innerHTML +=`<p>Você tem <strong>${valor}</strong> anos.</p>`
+            if(valor < 16){
+                resposta.innerHTML = ('<p>Você <strong>não</strong>  pode votar!</p>')
+            }else if( valor < 18 || valor > 65){
+                resposta.innerHTML = ('<p>Seu voto é <strong>opcional</strong>!</p>')
+            }else{
+                resposta.innerHTML = ('<p>Seu voto é <strong>obrigatório</strong>!</p>')
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(51, 72, 233);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center; /*CENTRALIZANDO O TEXTO*/
+}
+
+section {
+  background: white;
+  border-radius: 10px; /*ARREDONDAMENTO DA BORDA*/
+  padding: 15px; /*TAMANHO DA CAIXA*/
+  width: 500px; /*LARGURA*/
+  margin: auto; /*CENTRALIZAR O A CAIXA */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+}
+
+footer {
+  color: white;
+  text-align: center; /*CENTRALIZAR O TEXTO */
+  font-style: italic; /*TIPO DE FONTE*/
+}
+input#fnum {
+  border-radius: 20px;
+  padding: 5px;
+}
+
+input#txtbutadd {
+  background-color: rgb(17, 220, 159);
+  border-radius: 20px;
+  padding: 10px;
+  font: normal 11pt Arial;
+  color: rgb(255, 255, 255);
+}
+
+input#ffinaliza {
+  background-color: rgb(17, 220, 159);
+  border-radius: 20px;
+  padding: 10px;
+  font: normal 11pt Arial;
+  color: rgb(255, 255, 255);
+}
+select#flista {
+  font: normal 11pt Arial;
+  background-color: rgb(157, 232, 230);
+  border-radius: 5px;
+  width: 150px;
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(51, 72, 233);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center; /*CENTRALIZANDO O TEXTO*/
+}
+
+section {
+  background: white;
+  border-radius: 10px; /*ARREDONDAMENTO DA BORDA*/
+  padding: 15px; /*TAMANHO DA CAIXA*/
+  width: 500px; /*LARGURA*/
+  margin: auto; /*CENTRALIZAR O A CAIXA */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+}
+
+footer {
+  color: white;
+  text-align: center; /*CENTRALIZAR O TEXTO */
+  font-style: italic; /*TIPO DE FONTE*/
+}
+input#botaoVeri {
+  background-color: rgb(37, 7, 49);
+  font: normal 13pt Arial;
+  color: rgba(250, 249, 249, 0.809);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px; /*TAMANHO DA CAIXA*/
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+  margin-left: 30px; /* */
+}

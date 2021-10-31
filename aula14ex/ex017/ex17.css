@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(51, 72, 233);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center; /*CENTRALIZANDO O TEXTO*/
+}
+
+section {
+  background: white;
+  border-radius: 10px; /*ARREDONDAMENTO DA BORDA*/
+  padding: 15px; /*TAMANHO DA CAIXA*/
+  width: 600px; /*LARGURA*/
+  margin: auto; /*CENTRALIZAR O A CAIXA */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+}
+
+footer {
+  color: white;
+  text-align: center; /*CENTRALIZAR O TEXTO */
+  font-style: italic; /*TIPO DE FONTE*/
+}
+input#tabu {
+  background-color: rgb(80, 7, 74);
+  font: normal 15pt Arial;
+  border-radius: 20px;
+  padding: 10px;
+  width: 150px;
+  color: rgb(255, 255, 255);
+}
+input#txtTabu {
+  font: normal 15pt Arial;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada...</title>
+    <link rel="stylesheet" href="ex17.css">
+</head>
+<body> <!-- CORPO  -->
+    <header> <!-- CABEÇALHO  -->
+        <h1>Tabuada</h1>
+
+    </header>
+    <section> <!-- PODENDO SER UMA section OU UM article  --> <!-- QUE É O NOSSO CONTEUDO  -->
+        <div>
+            <p>Número:
+                <input type="number" name="txtNum" id="txtNum">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()" id="tabu">
+            </p>
+            <p>
+                <select name="txtSelect" id="tabuada" size="10"> <!-- Este "SIZE" será o tamanho do select, já que a tabuada tem 10 linhas, o size será 10  -->
+                    <option>Digite um número acima!</option>
+                    <!-- <option value="v1">valor1</option>
+                    <option value="v2">valor2</option>  estes options seria as opções disponiveis  -->
+                </select>
+            </p>
+
+        </div>
+        <div id="resul">
+
+
+
+        </div>
+
+    </section>
+    <footer> <!-- RODAPÉ  -->
+        <p>&copy; CursoemVideo</p>  <!-- "&copy" É O @ QUE TEMOS-->
+
+    </footer>
+    <script src="ex17.js"></script>  <!--É ONDE COLOCA O LINK DO ARQUIVO EM js-->
+</body>
+</html>

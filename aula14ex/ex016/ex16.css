@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(51, 72, 233);
+  font: normal 15pt Arial;
+}
+
+header {
+  color: white;
+  text-align: center; /*CENTRALIZANDO O TEXTO*/
+}
+
+section {
+  background: white;
+  border-radius: 10px; /*ARREDONDAMENTO DA BORDA*/
+  padding: 15px; /*TAMANHO DA CAIXA*/
+  width: 500px; /*LARGURA*/
+  margin: auto; /*CENTRALIZAR O A CAIXA */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+}
+
+footer {
+  color: white;
+  text-align: center; /*CENTRALIZAR O TEXTO */
+  font-style: italic; /*TIPO DE FONTE*/
+}
+input#verifiCont {
+  background-color: blue;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  margin-left: 75px;
+  box-shadow: 5px 5px 5px rgb(22, 22, 124);
+  font: normal 15pt Arial;
+  color: white;
+}
+input#txtinicio {
+  font: normal 13pt Arial;
+  border-radius: 10px;
+}
+input#txtfim {
+  font: normal 13pt Arial;
+  border-radius: 10px;
+}
+input#txtpasso {
+  font: normal 13pt Arial;
+  border-radius: 10px;
+}

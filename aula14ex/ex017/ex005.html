@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(28, 80, 175);
+            font: normal 14pt arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudo com DOM</h1>
+    <p>Aqui vai os resultados</p>
+    <p>aprendendo a usar <strong>DOM</strong> em java script</p>
+    <div id="msg">Clique em mim</div>
+    <div name="msg2">ola mundo</div>
+    <div id="msg3">hey brother</div>
+    <div class="msg4">hey brother</div>
+    <script>
+        var corpo = window.document.body
+        var paragrado1 = window.document.getElementsByTagName('p')[0] //selecionando por NOME
+        var paragrado2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('está escrito assim: '+ paragrado1.innerHTML +'<br>') //oegando oq está escrito no paragrafo e mostrnando na tela originalmente
+        document.write('está escrito assim: '+ paragrado2.innerText) //oegando oq está escrito no paragrafo e mostrnando na tela apenas o texto
+        corpo.style.background = "darkgreen" //mudou a cor atrves de uma variavel
+        paragrado1.style.color = "blue" //s substituiu a cor atraves de uma variavel
+
+
+        var porID = window.document.getElementById('msg') //selecionando por ID
+        porID.style.background='red'
+        porID.innerText = 'Estou aguardando...'
+        //window.document.getElementById('msg').innerText = 'olá' //caso use apenas uma vez eu mudo oq tava escrito originalmente assim
+
+        var porNAME = window.document.getElementsByName('msg2')[1] //selecionando por NAME
+
+        var porSELECT = window.document.querySelector('div#msg3')// selecionando por SELETOR em um ID
+        porSELECT.style.color = 'pink'
+
+        
+        var porSELECT = window.document.querySelector('div.msg4')// selecionando por SELETOR em uma CLASS
+        porSELECT.style.background = 'pink'
+
+
+    </script>
+</body>
+</html>

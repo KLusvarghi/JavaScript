@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(51, 72, 233);
+  font: normal 15pt Arial;
+}
+
+header {
+  /*CABEÇALHO DA PÁGINA*/
+  color: white;
+  text-align: center; /*CENTRALIZANDO O TEXTO*/
+}
+
+section {
+  /*CONTEM O CONTEÚDO*/
+  background: white;
+  border-radius: 10px; /*ARREDONDAMENTO DA BORDA*/
+  padding: 15px; /*TAMANHO DA CAIXA*/
+  width: 500px; /*LARGURA*/
+  margin: auto; /*CENTRALIZAR O A CAIXA */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.83); /*FAZER SOMBRA NA CAIXA */
+}
+
+div {
+  text-align: center;
+  padding: 9px;
+}
+
+footer {
+  /*RODAÉ*/
+  color: white;
+  text-align: center; /*CENTRALIZAR O TEXTO */
+  font-style: italic; /*TIPO DE FONTE*/
+}

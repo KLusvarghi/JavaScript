@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        h1{
+            color: purple;
+        }
+        body{
+            background-color: coral;
+            color:darkolivegreen;
+            font: 15pt Arial;
+        }
+        input{
+            font: normal 13pt arial;
+            width: 100px;
+        }
+        div#resposta{
+            font:18pt Arial;
+            color: darkblue;
+        }
+        input#but{
+            background: red;
+        }
+        input#txtvalor{
+            background: aquamarine;
+        }
+
+    </style>
+</head>
+    <h1>Nacionalidades...</h1>
+    Digite de qual país você vem: <input type="text" value="" id="txtvalor">
+    <input type="button" value="Verificar" onclick="nacionalidade()" id="but">
+    <div id="resposta">
+
+    </div>
+<body>
+    <script>
+        function nacionalidade(){
+            var txtv = window.document.querySelector('input#txtvalor')
+            var resposta = window.document.querySelector('div#resposta')
+            var vel = (txtv.value)
+            resposta.innerHTML +=`<p>Seu país de origem é <strong>${vel}</strong></p>`
+                if(vel == "Brasil"){
+                    resposta.innerHTML = ('<p>Voce é <strong>brasileiro!</strong></p>')
+                }else{
+                    resposta.innerHTML = ('<p>Voce é <strong>estrangeiro!</strong></p>')
+                }
+        }   
+    </script>
+    
+</body>
+</html>
